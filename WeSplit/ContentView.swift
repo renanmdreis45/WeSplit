@@ -11,13 +11,18 @@ import SwiftData
 struct ContentView: View {
 
     var body: some View {
-        Form {
-            Section {
-                Text("1")
-            }
-            Section{
-                Text("2")
+        NavigationStack {
+            Form {
+                Section {
+                    Text("1")
+                }
+                Section{
+                    Text("2")
+                }
             }
         }
+        .navigationTitle("WeSplit")
+        .navigationBarTitleDisplayMode(.inline)
+
     }
 }
